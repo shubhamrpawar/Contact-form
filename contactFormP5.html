@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        #parent{
+            height: 700px;
+            width: 700px;
+            background-image: linear-gradient(to right, dodgerblue,rgb(255, 86, 142));
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child{
+            height: 520px;
+            width: 450px;
+            background-color: white;
+            font-family:Arial, Helvetica, sans-serif;
+            box-shadow: 5px 5px 5px black;
+        }
+        .aln{
+            margin-left: 40px;           
+        }
+        h1{
+            text-align: center;
+        }
+        #btn{
+            background-image: linear-gradient(to left, dodgerblue,rgb(255, 86, 142));
+            color: white;
+            padding: 10px 50px;
+            border-radius: 60px;
+            border: none;
+            margin: 0 auto;
+            margin-left: 150px;
+            box-shadow: 2px 2px 5px black;
+            color: black;
+        }
+        #al ul li{
+                display: inline-block;
+        }
+        #brdr{
+                border-style: none;
+                border-bottom: 1px solid;
+                border-right: 1px solid;
+                box-shadow: 1px 1px rgba(83, 79, 79, 0.788);
+        }
+        #btn:hover{
+            background-image: linear-gradient(to right, dodgerblue,rgb(255, 86, 142));
+            color: white;
+            padding: 10px 50px;
+            border-radius: 60px;
+            border: none;
+            margin: 0 auto;
+            margin-left: 150px;
+            box-shadow: 5px 5px 5px black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <h1>Contact Us</h1>
+            <div class="aln">YOUR NAME*</div>
+            <div id="al">
+                <ul>
+                    <li><input id="brdr" type="text" placeholder="First name"></li>
+                    <li><input id="brdr" type="text" placeholder="Last name"></li>
+                </ul>
+            </div>
+            <br>
+            <div class="aln">EMAIL ADDRESS*</div>
+            <br>
+            <div class="aln" ><input id="brdr" size="45px" type="text" placeholder="Eg.example@email.com"></div>
+            <br>
+            <div class="aln">PHONE NUMBER*</div>
+            <br>
+            <div class="aln"><input id="brdr" size="45px" type="text" placeholder="Eg:+1800 000000"></div>
+            <br>
+            <div class="aln">MESSAGE*</div>
+            <br>
+            <div class="aln" ><textarea id="brdr" cols="45px" rows="5" placeholder="Write Your Message Here..." ></textarea></div>
+            <br><div><a href="#"><button id="btn"><b>Submit →</b></button></a></div>
+        </div>
+    </div>
+</body>
+</html>
